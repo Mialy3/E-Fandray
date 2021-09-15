@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TWEEKLY-1 LOGIN</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="label">User Login</h1>
+
+      <form
+        class="login_form"
+        action="http://localhost:3000"
+        method="get"
+        name="form"
+        onsubmit="return validated()"
+      >
+        <div class="font">Email or Phone</div>
+        <input autocomplete="off" type="text" name="email" />
+
+        <div id="email_error">Please fill up your Email or Phone</div>
+
+        <div class="font font2">Password</div>
+        <input type="password" name="password" />
+
+        <div id="password_error">Please fill up your Password</div>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script src="valid.js"></script>
+  </body>
+</html>
